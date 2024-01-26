@@ -1,0 +1,113 @@
+/****************************************** 
+
+COMPILED CSS STYLES
+
+-------------------------------------------
+Table of Contents...
+1.  COLOR SCHEME
+2.  LAYOUT
+3.  COMPONENTS
+4.  UTILITIES
+
+
+ORDER OF PROPERTIES ======================= 
+1.  CONTENT
+2.  POSITION AND LAYOUT
+3.  DISPLAY AND VISIBILITY
+4.  CLIPPING  
+5.  ANIMATION
+6.  BOX MODEL
+7.  TYPOGRAPHY
+8.  PSEUDO-CLASS & PSEUDO-ELEMENTS
+
+*******************************************/
+
+
+/* PRIMITIVES*/
+
+:root{
+
+  /* COLOR PRIMITIVES */
+  --black: #000;
+  --white: #fff;
+
+  --orange-0:    var(--black);
+  --orange-10: rgb(87, 0, 0),      #570000;
+  --orange-20: rgb(120, 22, 0),    #781600;   
+  --orange-30: rgb(157, 56, 0),    #9d3800;
+  --orange-40: rgb(196, 88, 14),   #c4580e;
+  --orange-50: rgb(236,122,49),    #EC7932;
+  --orange-60: rgb(246, 148, 91),  #f6945b;
+  --orange-70: rgb(253, 175, 131), #fdaf83;
+  --orange-80: rgb(255, 201, 171), #ffc9ab;
+  --orange-90: rgb(255, 228, 213), #ffe4d5;
+  --orange-100:  var(--white);
+
+
+
+  --blue-0:      var(--black);
+  --blue-10:   rgb(0, 39, 91),     #00275b;
+  --blue-20:   rgb(0, 65, 121),    #004179;
+  --blue-30:   rgb(0, 93, 152),    #005d98;
+  --blue-40:   rgb(0, 122, 185),   #007ab9;
+  --blue-50:   rgb(1,156,220),     #019cdc;
+  --blue-60:   rgb(97, 172, 226),  #61ace2;
+  --blue-70:   rgb(143, 192, 233), #8fc0e9;
+  --blue-80:   rgb(182, 213, 241), #b6d5f1;
+  --blue-90:   rgb(219, 234, 248), #dbeaf8;
+  --blue-100:    var(--white);
+
+
+  --red-0:       var(--black);
+  --red-10:    rgb(89, 0, 0),       #590000;
+  --red-20:    rgb(110, 0, 3),      #6e0003;
+  --red-30:    rgb(133, 0, 23),     #850017;
+  --red-40:    rgb(156, 0, 38),     #9c0026;
+  --red-50:    rgb(179,0,53),       #b30035;
+  --red-60:    rgb(201, 77, 89),    #c94d59;
+  --red-70:    rgb(220, 124, 128),  #dc7c80;
+  --red-80:    rgb(235, 167, 168),  #eba7a8;
+  --red-90:    rgb(247, 211, 211),  #f7d3d3;
+  --red-100:     var(--white);
+
+  --green-0:     var(--black);
+  --green-10:  rgb(0, 161, 93), #00a15d;
+  --green-20:  rgb(0, 161, 93), #00a15d;
+  --green-30:  rgb(0, 161, 93), #00a15d;
+  --green-40:  rgb(0, 161, 93), #00a15d;
+  --green-50:  rgb(0, 161, 93), #00a15d;
+  --green-60:  rgb(0, 131, 67), #008343;
+  --green-70:  rgb(0, 100, 39), #006427;
+  --green-80:  rgb(0, 71, 13),  #00470d;
+  --green-90:  rgb(0, 45, 0), #002d00;
+  --green-100:  var(--white);
+
+  --pink-0:   rgb(215,42,126), #000000;
+  --pink-10:   rgb(215,42,126), #000000;
+  --pink-20:   rgb(215,42,126), #000000;
+  --pink-30:   rgb(215,42,126), #000000;
+  --pink-40:   rgb(215,42,126), #000000;
+  --pink-50:   rgb(215,42,126), #000000;
+  --pink-60:   rgb(215,42,126), #000000;
+  --pink-70:   rgb(215,42,126), #000000;
+  --pink-80:   rgb(215,42,126), #000000;
+  --pink-90:   rgb(215,42,126), #000000;
+  --pink-100:   rgb(215,42,126), #000000;
+}
+
+
+/* POSITION AND LAYOUT */
+
+/* DISPLAY AND VISIBILITY */
+
+/* CLIPPING */
+
+/* ANIMATION */
+
+/* BOX MODEL (FROM OUTSIDE IN) */
+
+/* BACKGROUND */
+
+/* TYPOGRAPHY */
+
+/* NESTED RULES */
