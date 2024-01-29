@@ -25,74 +25,180 @@ ORDER OF PROPERTIES =======================
 
 /* PRIMITIVES*/
 
-:root{
+:root {
 
   /* COLOR PRIMITIVES */
   --black: #000;
   --white: #fff;
 
-  --orange-0:    var(--black);
-  --orange-10: rgb(87, 0, 0),      #570000;
-  --orange-20: rgb(120, 22, 0),    #781600;   
-  --orange-30: rgb(157, 56, 0),    #9d3800;
-  --orange-40: rgb(196, 88, 14),   #c4580e;
-  --orange-50: rgb(236,122,49),    #EC7932;
-  --orange-60: rgb(246, 148, 91),  #f6945b;
+  --orange-0: var(--black);
+  --orange-10: rgb(87, 0, 0) /* #570000; */;
+  --orange-20: rgb(120, 22, 0), #781600;
+  --orange-30: rgb(157, 56, 0), #9d3800;
+  --orange-40: rgb(196, 88, 14), #c4580e;
+  --orange-50: rgb(236, 122, 49), #EC7932;
+  --orange-60: rgb(246, 148, 91), #f6945b;
   --orange-70: rgb(253, 175, 131), #fdaf83;
   --orange-80: rgb(255, 201, 171), #ffc9ab;
   --orange-90: rgb(255, 228, 213), #ffe4d5;
-  --orange-100:  var(--white);
+  --orange-100: var(--white);
+
+  --blue-0: var(--black);
+  --blue-10: rgb(0, 39, 91), #00275b;
+  --blue-20: rgb(0, 65, 121), #004179;
+  --blue-30: rgb(0, 93, 152), #005d98;
+  --blue-40: rgb(0, 122, 185), #007ab9;
+  --blue-50: rgb(1, 156, 220), #019cdc;
+  --blue-60: rgb(97, 172, 226), #61ace2;
+  --blue-70: rgb(143, 192, 233), #8fc0e9;
+  --blue-80: rgb(182, 213, 241), #b6d5f1;
+  --blue-90: rgb(219, 234, 248); /* #dbeaf8; */
+  --blue-100: var(--white);
+
+  --red-0: var(--black);
+  --red-10: rgb(89, 0, 0), #590000;
+  --red-20: rgb(110, 0, 3), #6e0003;
+  --red-30: rgb(133, 0, 23), #850017;
+  --red-40: rgb(156, 0, 38), #9c0026;
+  --red-50: rgb(179, 0, 53), #b30035;
+  --red-60: rgb(201, 77, 89), #c94d59;
+  --red-70: rgb(220, 124, 128), #dc7c80;
+  --red-80: rgb(235, 167, 168), #eba7a8;
+  --red-90: rgb(247, 211, 211), #f7d3d3;
+  --red-100: var(--white);
+
+  --green-0: var(--black);
+  --green-10: rgb(0, 161, 93), #00a15d;
+  --green-20: rgb(0, 161, 93), #00a15d;
+  --green-30: rgb(0, 161, 93), #00a15d;
+  --green-40: rgb(0, 161, 93), #00a15d;
+  --green-50: rgb(0, 161, 93), #00a15d;
+  --green-60: rgb(0, 131, 67), #008343;
+  --green-70: rgb(0, 100, 39), #006427;
+  --green-80: rgb(0, 71, 13), #00470d;
+  --green-90: rgb(0, 45, 0), #002d00;
+  --green-100: var(--white);
+
+  --pink-0: rgb(215, 42, 126), #000000;
+  --pink-10: rgb(215, 42, 126), #000000;
+  --pink-20: rgb(215, 42, 126), #000000;
+  --pink-30: rgb(215, 42, 126), #000000;
+  --pink-40: rgb(215, 42, 126), #000000;
+  --pink-50: rgb(215, 42, 126), #000000;
+  --pink-60: rgb(215, 42, 126), #000000;
+  --pink-70: rgb(215, 42, 126), #000000;
+  --pink-80: rgb(215, 42, 126), #000000;
+  --pink-90: rgb(215, 42, 126), #000000;
+  --pink-100: rgb(215, 42, 126), #000000;
+}
+
+body, html {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #f0f0f0;
+}
+
+[class*="grid-"] {
+  /* any class that starts with "grid-" has these characteristics */
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-site-main {
+  grid-template-columns: 300px 3fr 1fr;
+  grid-template-rows: 64px 1fr 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0 .5rem 0 .5rem;
+  min-height: 100vh;
+}
+.grid-even-columns {
+  grid-template-columns: repeat(autofit, minmax(min(500px, 100%), 1fr));
+}
+
+@media (min-width: 50em){
+.grid-auto-flow{
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}}
 
 
+/* Nav Stylings */
+.navbar{
+  grid-area: 1 / 1 / 1 / 4;
+}
+.navbar-container{
+  display: grid;
+  grid-template-columns:300px 3fr 1fr;
+  height: 100%;
 
-  --blue-0:      var(--black);
-  --blue-10:   rgb(0, 39, 91),     #00275b;
-  --blue-20:   rgb(0, 65, 121),    #004179;
-  --blue-30:   rgb(0, 93, 152),    #005d98;
-  --blue-40:   rgb(0, 122, 185),   #007ab9;
-  --blue-50:   rgb(1,156,220),     #019cdc;
-  --blue-60:   rgb(97, 172, 226),  #61ace2;
-  --blue-70:   rgb(143, 192, 233), #8fc0e9;
-  --blue-80:   rgb(182, 213, 241), #b6d5f1;
-  --blue-90:   rgb(219, 234, 248), #dbeaf8;
-  --blue-100:    var(--white);
+}
 
+.navbar-container > div {
+  place-items: center stretch;
+  padding: 1rem;
+}
 
-  --red-0:       var(--black);
-  --red-10:    rgb(89, 0, 0),       #590000;
-  --red-20:    rgb(110, 0, 3),      #6e0003;
-  --red-30:    rgb(133, 0, 23),     #850017;
-  --red-40:    rgb(156, 0, 38),     #9c0026;
-  --red-50:    rgb(179,0,53),       #b30035;
-  --red-60:    rgb(201, 77, 89),    #c94d59;
-  --red-70:    rgb(220, 124, 128),  #dc7c80;
-  --red-80:    rgb(235, 167, 168),  #eba7a8;
-  --red-90:    rgb(247, 211, 211),  #f7d3d3;
-  --red-100:     var(--white);
+.nav-logo-container{
+  align-items: center;
+  margin: auto;
+}
 
-  --green-0:     var(--black);
-  --green-10:  rgb(0, 161, 93), #00a15d;
-  --green-20:  rgb(0, 161, 93), #00a15d;
-  --green-30:  rgb(0, 161, 93), #00a15d;
-  --green-40:  rgb(0, 161, 93), #00a15d;
-  --green-50:  rgb(0, 161, 93), #00a15d;
-  --green-60:  rgb(0, 131, 67), #008343;
-  --green-70:  rgb(0, 100, 39), #006427;
-  --green-80:  rgb(0, 71, 13),  #00470d;
-  --green-90:  rgb(0, 45, 0), #002d00;
-  --green-100:  var(--white);
+.nav-logo-image{
+  height: 32px;
+}
 
-  --pink-0:   rgb(215,42,126), #000000;
-  --pink-10:   rgb(215,42,126), #000000;
-  --pink-20:   rgb(215,42,126), #000000;
-  --pink-30:   rgb(215,42,126), #000000;
-  --pink-40:   rgb(215,42,126), #000000;
-  --pink-50:   rgb(215,42,126), #000000;
-  --pink-60:   rgb(215,42,126), #000000;
-  --pink-70:   rgb(215,42,126), #000000;
-  --pink-80:   rgb(215,42,126), #000000;
-  --pink-90:   rgb(215,42,126), #000000;
-  --pink-100:   rgb(215,42,126), #000000;
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link-item{
+  display: inline;
+}
+
+.nav-link-item > a{
+  color: --orange-40, #c4580e; 
+}
+
+.nav-link-item > a:visited{
+  text-decoration: none;
+}
+
+/*  */
+
+.main{
+  grid-area: 2 / 2 / 3 / 4;
+  padding: 1rem;
+
+}
+
+.article{
+  max-width: 50rem;
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.aside{
+  grid-area: 2 / 1 / 3 / 2;
+  margin-right: .5rem;
+  min-height: 70rem;
+  padding: 1rem;
+}
+
+.toc-link-item{
+ list-style-type: none;
+ padding: .5rem .5rem .5rem 16px;
+}
+
+.toc-link-item:hover{
+  background-color: var(--blue-90, #dbeaf8);
+ }
+
+.footer{
+  grid-area: 3 / 1 / 3/ 4;
+  max-height: 10rem;
 }
 
 
