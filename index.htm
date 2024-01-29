@@ -1,54 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body >
-    <div class="grid-site-main">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="nav-logo-container">
-                    <a href=""> <img src="assets/Logos/Logo_FED3_.png" alt="FED3 Logo" class="nav-logo-image"></a>
-                </div>
-                <div class="nav-links">
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                </div>
-                <div></div>
-            </div>
-        </nav>
-        <main class="main">
-            <article class="article">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-                <h1>Heading</h1>
+  <body>
+    <div class="grid-site-home">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-logo-container">
+            <a href="">
+              <img
+                src="assets/Logos/Logo_FED3_.png"
+                alt="FED3 Logo"
+                class="nav-logo-image"
+            /></a>
+          </div>
+          <div class="nav-links">
+            <li class="nav-link-item"><a href="#grid-home-card-container">Steps</a></li>
+            <li class="nav-link-item"><a href="">Style Guide</a></li>
+            <li class="nav-link-item"><a href="">Contact</a></li>
+          </div>
+          <div></div>
+        </div>
+      </nav>
+      <main class="main-home">
+        <div class="grid-hero-image">
+          <img src="assets/philip-oroni-lH1CACE-Fd8-unsplash.jpg" alt="" />
+        </div>
+        <div class="grid-hero-text">
+          <div>
+            <h1>Mastering Git Through Practical Application</h1>
+          </div>
+        </div>
 
-            </article>
+        <div class="content-below-hero">
+          <p id="home-leading">
+            In a nutshell, Git is a widely adopted open-source version control
+            system in the development industry. So, what does that entail?
+          </p>
+          <p id="home-leading">
+            Git is a tool that not only saves but also meticulously tracks
+            changes made to a file in collaborative, non-linear development
+            scenarios, particularly when multiple individuals are involved.
+          </p>
+          <p id="home-leading">
+            These files find their home in repositories, commonly known as
+            repos, functioning as centralized digital storage. When
+            collaborating on a project, all contributors refer to the repo to
+            both pull and push code seamlessly.
+          </p>
+          <p id="home-leading">
+            In the proceeding article, you will learn how to work with Git
+            (2.43.0) and Github in Visual Studio Code (VS Code) on Windows 10.
+            The objectives are as follows:
+          </p>
 
+          <div id="grid-home-card-container" class="grid-card-container">
+            <a href="setting-up-the-environment-step-1.htm">
+              <div class="card">
+                <h3 class="card-step">1</h3>
+                <h4 class="card-title">Setting Up the Environment</h4>
+              </div>
+            </a>
+            <a href="creating-and-cloning-a-gitHub-repository-step-2.htm">
+              <div class="card">
+                <h3 class="card-step">2</h3>
+                <h4 class="card-title">Creating and Cloning a GitHub Repository</h4>
+              </div>
+            </a>
+            <a href="basic-git-operations-in-vs-code-step-3.htm">
+              <div class="card">
+                <h3 class="card-step">3</h3>
+                <h4 class="card-title">Basic Git Operations in VS Code</h4>
+              </div>
+            </a>
+            <a href="branching-with-vs-code-step-4.htm">
+              <div class="card">
+                <h3 class="card-step">4</h3>
+                <h4 class="card-title">Branching with VS Code</h4>
+              </div>
+            </a>
+            <a href="working-with-remote-repositories-step-5.htm">
+              <div class="card">
+                <h3 class="card-step">5</h3>
+                <h4 class="card-title">Working with Remote Repositories</h4>
+              </div>
+            </a>
+            <a href="pull-requests-and-code-reviews-within-vs-code-step-6.htm">
+              <div class="card">
+                <h3 class="card-step">6</h3>
+                <h4 class="card-title">Pull Requests and Code Reviews within VS Code</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
 
-        </main>
-        <aside class="aside">
-            <div class="toc-container">
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-            </div>
-
-        </aside>
-        <footer class="footer">Footer</footer>
+      <footer class="footer">
+        <div>
+            &copy2024 — 
+            <strong>Zarek Lacsamana</strong>
+            . All Rights Reserved.
+        </div>
+      </footer>
     </div>
 
     <script></script>
-</body>
+  </body>
 </html>
