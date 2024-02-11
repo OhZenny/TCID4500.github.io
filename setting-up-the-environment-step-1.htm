@@ -1,55 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setting Up a Git and Visual Studio Code Environment</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body >
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
     <div class="grid-site-main">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="nav-logo-container">
-                    <a href=""> <img src="assets/Logos/Logo_FED3_.png" alt="FED3 Logo" class="nav-logo-image"></a>
-                </div>
-                <div class="nav-links">
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                </div>
-                <div></div>
-            </div>
-        </nav>
-        <main class="main-article">
-            <article class="article">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-logo-container">
+            <a href="index.htm">
+              <img
+                src="assets/Logos/Logo_FED3_.png"
+                alt="FED3 Logo"
+                class="nav-logo-image"
+            /></a>
+          </div>
+          <div class="nav-links">
+            <li class="nav-link-item"><a href="index.htm#grid-home-card-container">Steps</a></li>
+            <li class="nav-link-item"><a href="">Style Guide</a></li>
+            <li class="nav-link-item"><a href="">Contact</a></li>
+          </div>
+          <div></div>
+        </div>
+      </nav>
+      <main class="main-article">
+        <article class="article">
+          <h1 id="installingRequiredSoftware">
+            Setting Up a Git and Visual Studio Code Environment
+          </h1>
+          <p>
+            First things first, install the most recent versions of Git and VS
+            Code. This guide was written with Git version 2.43.0, so things
+            might look different from this guide, but the steps should be
+            similar.
+          </p>
 
-                <h1>Setting Up a Git and Visual Studio Code Environment</h1>
+          <h2 id="installingGit">Installing Git</h2>
+          <p>
+            Visit Git’s website and head to the downloads page or click the link
+            <span class="paragraph-link"
+              ><a href="https://git-scm.com/downloads" target="_blank"
+                >here
+                <span class="material-symbols-outlined size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >.
+          </p>
 
-            </article>
+          <p>
+            Download the correct setup for your operating system by following
+            the instructions on their page.
+          </p>
 
+          <p>
+            <span class="paragraph-step-number">1.</span>Keep the default checks
+            on the first page
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step1.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
 
-        </main>
-        <aside class="aside">
-            <ol class="toc-container">
-                <h2 class="toc-container-heading">In This Article</h4>
-                <li class="toc-link-item"><a href="">Installing Required Software</a>
-                    <ol>
-                        <li class="toc-link-item"><a href="">Installing Git</a></li>
-                        <li class="toc-link-item"><a href="">Installing VS Code</a></li>
-                    </ol>
-                </li>
-                <li class="toc-link-item"><a href="">Configuring Git with VS Code</a></li>
+          <p>
+            <span class="paragraph-step-number">2.</span>Change the default
+            editor to “Use Visual Studio Code as Git’s default editor”.
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step2.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
 
+          <p>
+            <span class="paragraph-step-number">3.</span>Choose "Override the
+            default branch name for new repositories". Rename it to
+            "<em>main</em>".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step3.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">4.</span>Choose "Git from the
+            command line and also from 3rd-party software".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step4.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">5.</span>Choose "Use bundled
+            openSSH".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step5.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">6.</span>Choose "Use the OpenSSL
+            library".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step6.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">7.</span>Choose "Checkout
+            Windows-style, commit Unix-style line endings".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step7.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">8.</span>Choose "MinTTY".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step8.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">9.</span>Choose "Fast-fordward
+            or merge”.
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step9.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">10.</span>Choose "Git Credential
+            Manager”.
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step10.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">11.</span>Check "Enable file
+            system caching" and leave "Enable symbolic links" unchecked.
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step11.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">12.</span>Leave both boxes
+            unchecked. Click "<em>Install</em>".
+            <img
+              class="paragraph-image"
+              src="assets\articles\step1\installing-git\Step12.JPG"
+              alt="Github Setup window, with the heading:select components."
+            />
+          </p>
+        </article>
+        <article class="article">
+          <h2 id="installingVSCode">Installing Visual Studio Code</h2>
+          <p>
+            Visit Visual Studio Code's (VSCode) website and head to the
+            downloads page or click the link
+            <span class="paragraph-link"
+              ><a href="https://code.visualstudio.com/download" target="_blank"
+                >here
+                <span class="material-symbols-outlined size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >. Make sure to select the download that corresponds to your
+            operating system.
+          </p>
+          <p>
+            <span class="paragraph-step-number">1.</span>Read through and accept
+            the license agreement.
+          </p>
+          <p>
+            <span class="paragraph-step-number">2.</span>Customize further
+            installation settings, or leave default.
+          </p>
+          <p>
+            <span class="paragraph-step-number">3.</span>Click
+            "<em>install</em>".
+          </p>
+        </article>
+        <article class="article">
+          <h2 id="configuringGitWithVSCode">Configuring Git with VSCode</h2>
+          <p>
+            Visual Studio Code (VSCode) allows developers to utilize a Git
+            repository. In order to get this started inside VScode, we need to
+            have Git already installed. Once you've done that, restart VSCode.
+          </p>
+
+          <p>
+            <span class="paragraph-step-number">1.</span>With VSCode open, go to
+            the top app ribbon. Locate "<em>Terminal</em>".
+          </p>
+          <p>
+            <span class="paragraph-step-number">2.</span>Under
+            "<em>Terminal</em>", click "<em>New Terminal</em>". The terminal
+            will open at the bottom of VSCode as a window.
+          </p>
+          <p>
+            <span class="paragraph-step-number">3.</span>In the terminal, type
+            the following line (replace placeholders with your own):
+          </p>
+
+          <pre>
+                git config --global user.email youremail.@google.com
+            </pre
+          >
+          <pre>
+                git config --global user.name yourusername
+            </pre
+          >
+          <p>
+            <span class="paragraph-step-number">4.</span>Check to see if your
+            email and username applied with the following code. The output
+            should be the username and email that you just set.
+          </p>
+          <pre>
+            git config --global user.email
+        </pre
+          >
+          <pre>
+            git config --global user.name
+        </pre
+          >
+
+          <p>
+            Visit Visual Studio Code's (VSCode) documents for more indepth information.
+            <span class="paragraph-link"
+              ><a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-gitd" target="_blank"
+                >here
+                <span class="material-symbols-outlined size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >.
+          </p>
+        </article>
+      </main>
+      <aside class="aside">
+        <ol class="toc-container">
+          <h2 class="toc-container-heading">In This Article</h2>
+          <li class="toc-link-item">
+            <a href="#installingRequiredSoftware"
+              >Installing Required Software</a
+            >
+            <ol>
+              <li class="toc-link-item">
+                <a href="#installingGit">Installing Git</a>
+              </li>
+              <li class="toc-link-item">
+                <a href="#installingVSCode">Installing VSCode</a>
+              </li>
             </ol>
-
-        </aside>
-        <footer class="footer">Footer</footer>
+          </li>
+          <li class="toc-link-item">
+            <a href="#configuringGitWithVSCode">Configuring Git with VS Code</a>
+          </li>
+        </ol>
+      </aside>
+      <footer class="footer">Footer</footer>
     </div>
 
     <script></script>
-</body>
+  </body>
 </html>
