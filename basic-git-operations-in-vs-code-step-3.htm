@@ -1,54 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body >
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
     <div class="grid-site-main">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="nav-logo-container">
-                    <a href=""> <img src="assets/Logos/Logo_FED3_.png" alt="FED3 Logo" class="nav-logo-image"></a>
-                </div>
-                <div class="nav-links">
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                </div>
-                <div></div>
-            </div>
-        </nav>
-        <main class="main-article">
-            <article class="article">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-logo-container">
+            <a href="">
+              <img
+                src="assets/Logos/Logo_FED3_.png"
+                alt="FED3 Logo"
+                class="nav-logo-image"
+            /></a>
+          </div>
+          <div class="nav-links">
+            <li class="nav-link-item">
+              <a href="index.htm#grid-home-card-container">Steps</a>
+            </li>
+            <li class="nav-link-item"><a href="">Style Guide</a></li>
+            <li class="nav-link-item"><a href="">Contact</a></li>
+          </div>
+          <div></div>
+        </div>
+      </nav>
+      <main class="main-article">
+        <article class="article">
+          <h1 id="basicGitOperationsInVSCode">
+            Basic Git Operations in VS Code
+          </h1>
+          <p>
+            In Visual Studio Code (VS Code), you can perform basic Git
+            operations such as status, add, commit, push, and pull through the
+            GUI. Here's list of the basic operations you can do:
+          </p>
+          <h2>Basic Operations</h2>
+          Here's how to do each operation and why it might be used:
+          <h3 id="storyStatus">Status</h3>
+          <p>
+            <code>git status </code> tracks and displays the changes to each
+            file in your working tree. It designates what the changes are with a
+            letter.
+          </p>
+          <p>
+            On VSCode, this can be seen underneath "<em>Changes</em>" on the
+            Source Control Panel.
+          </p>
+          <p>
+            Read more about the additional options you can leverage on
+            <span class="paragraph-link"
+              ><a href="https://git-scm.com/docs/git-status" target="_blank"
+                >Git's documents
+                <span class="material-symbols-outlined inline-icon size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >.
+          </p>
+          <h3 id="storyAdd">Add</h3>
+          <p>
+            <code>git add </code> stages the changes made for the next commit
+            you make. It tells Git which files or changes to include.
+          </p>
+          <p>
+            In the Source Control view, you'll see the list of changed files.
+          </p>
+          <p>
+            Click the
+            <span class="material-symbols-outlined size-16 inline-icon">
+              add
+            </span>
+            button next to the files you want to stage, or click the
+            <span class="material-symbols-outlined size-16 inline-icon">
+              add
+            </span>
+            button next to button at the top to stage all changes.
+          </p>
+          <h3 id="storyCommit">Commit</h3>
+          <p>
+            <code>git commit </code> can be done after the changes are staged.
+            Commit allows you to write a short memo to describe the files you
+            are about to push. This can be a simple as "added photos"
+          </p>
+          <p>
+            After you have written your commit, click the
+            <span class="material-symbols-outlined size-16 inline-icon">
+              check
+            </span>
+            at the top right corner of the window.
+          </p>
+          <h3 id="storyPush">Push</h3>
+          <p>
+            <code>git push </code> uploads local changes to a remote repository.
+            This is crucial for collaboration, as it allows others to access and
+            incorporate your changes.
+          </p>
 
-                <h1>Heading</h1>
-
-            </article>
-
-
-        </main>
-        <aside class="aside">
-            <div class="toc-container">
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-            </div>
-
-        </aside>
-        <footer class="footer">Footer</footer>
+          <h3 id="storyPull">Pull</h3>
+          <p>
+            <code>git pull </code> updates changes from a remote repository and
+            merges them into your local branch. This is essential for staying
+            up-to-date with the latest changes in a collaborative environment.
+          </p>
+        </article>
+      </main>
+      <aside class="aside">
+        <div class="p-2">
+          <ol class="toc-container">
+            <h2 class="toc-container-heading">In This Article</h2>
+            <li class="toc-link-item">
+              <a href="#basicGitOperationsInVSCode"
+                >Basic Git Operations in VS Code</a
+              >
+              <ol>
+                <li class="toc-link-item">
+                  <a href="#storyStatus">Status</a>
+                </li>
+                <li class="toc-link-item">
+                  <a href="#storyAdd">Add</a>
+                </li>
+                <li class="toc-link-item">
+                  <a href="#storyCommit">Commit</a>
+                </li>
+                <li class="toc-link-item">
+                  <a href="#storyPush">Push</a>
+                </li>
+                <li class="toc-link-item">
+                  <a href="#storyPull">Pull</a>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <footer class="footer">
+        <div>
+          &copy2024 —
+          <strong>Zarek Lacsamana</strong>
+          . All Rights Reserved.
+        </div>
+      </footer>
     </div>
 
     <script></script>
-</body>
+  </body>
 </html>
