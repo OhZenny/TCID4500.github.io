@@ -1,54 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body >
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
     <div class="grid-site-main">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="nav-logo-container">
-                    <a href=""> <img src="assets/Logos/Logo_FED3_.png" alt="FED3 Logo" class="nav-logo-image"></a>
-                </div>
-                <div class="nav-links">
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                    <li class="nav-link-item"><a href="">link</a></li>
-                </div>
-                <div></div>
-            </div>
-        </nav>
-        <main class="main-article">
-            <article class="article">
-
-                <h1>Heading</h1>
-
-            </article>
-
-
-        </main>
-        <aside class="aside">
-            <div class="toc-container">
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-                <li class="toc-link-item"><a href="">Link</a></li>
-            </div>
-
-        </aside>
-        <footer class="footer">Footer</footer>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="nav-logo-container">
+            <a href="">
+              <img
+                src="assets/Logos/Logo_FED3_.png"
+                alt="FED3 Logo"
+                class="nav-logo-image"
+            /></a>
+          </div>
+          <div class="nav-links">
+            <li class="nav-link-item">
+              <a href="index.htm#grid-home-card-container">Steps</a>
+            </li>
+            <li class="nav-link-item"><a href="">Style Guide</a></li>
+            <li class="nav-link-item"><a href="">Contact</a></li>
+          </div>
+          <div></div>
+        </div>
+      </nav>
+      <main class="main-article">
+        <article class="article">
+          <h1 id="workingWithRemoteRepositories">Working with remote repositories</h1>
+          <p>
+            As described in step 3, working with remote repositories in Visual
+            Studio Code (VSCode) allows you to collaborate with others and
+            manage your code on platforms like GitHub.
+          </p>
+          <p>
+            Sometimes, it can be a hassle to clone a repo manually. VSCode
+            allows you to more on a repo remotely, through the extension
+            <span class="paragraph-link"
+              ><a
+                href="https://marketplace.visualstudio.com/items?itemName=github.remotehub"
+                target="_blank"
+                >GitHub Repositories
+                <span class="material-symbols-outlined inline-icon size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >!
+          </p>
+        </article>
+        <article class="article">
+          <h2 id="addAndManageRemoteRepos">Add and manage remote repositores directly from VSCode</h2>
+          <p>
+            <span class="paragraph-step-number">1.</span> Download
+            <span class="paragraph-link"
+              ><a
+                href="https://marketplace.visualstudio.com/items?itemName=github.remotehub"
+                target="_blank"
+                >GitHub Repositories
+                <span class="material-symbols-outlined inline-icon size-16">
+                  open_in_new
+                </span>
+              </a></span
+            >
+            on VSCode.
+          </p>
+          <p>
+            <span class="paragraph-step-number">2.</span> With the extension
+            installed, click the "<em>Open a remote window</em>" button on the
+            status bar.
+          </p>
+          <p>
+            <span class="paragraph-step-number">3.</span> Select "<em
+              >Open Remote Repository...</em
+            >"
+          </p>
+          <p>
+            <span class="paragraph-step-number">4.</span>Choose the repo you
+            want to access. Once a repo is selected, the files will propagate in
+            your workspace. It will look as if you cloned them onto your
+            machine. However, you'll notice that in the bottom left corner on
+            the status bar, it will say "<em>GitHub</em>".
+          </p>
+        </article>
+        <article class="article">
+          <h2 id="pushToandPullFromTheseRemotes">
+            Push to and pull from these remotes using the VS Code interface.
+          </h2>
+          <p>
+            Push and pulling while working on a remote repo is exactly the same
+            as working on cloned files.
+          </p>
+          <p>Take a look at step 3: 
+            <span class="paragraph-link"
+              ><a
+                href="basic-git-operations-in-vs-code-step-3.htm"
+                >Basic Git Operations
+              </a></span
+            > for more information.
+          </p>
+        </article>
+      </main>
+      <aside class="aside">
+        <div class="p-2">
+          <ol class="toc-container">
+            <h2 class="toc-container-heading">In This Article</h2>
+            <li class="toc-link-item">
+              <a href="#workingWithRemoteRepositories"
+                >Working with Remote Repositories</a
+              >
+              <ol>
+                <li class="toc-link-item">
+                  <a href="#addAndManageRemoteRepos"
+                    >Add and manage remote repositories directly from VS
+                    Code.</a
+                  >
+                </li>
+                <li class="toc-link-item">
+                  <a href="#pushToandPullFromTheseRemotes"
+                    >Push to and pull from these remotes using the VS Code
+                    interface.</a
+                  >
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </aside>
+      <footer class="footer">
+        <div>
+          &copy2024 —
+          <strong>Zarek Lacsamana</strong>
+          . All Rights Reserved.
+        </div>
+      </footer>
     </div>
 
     <script></script>
-</body>
+  </body>
 </html>
